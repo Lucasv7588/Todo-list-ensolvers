@@ -6,7 +6,7 @@ import { TodoList } from './Component/TodoList';
 import { TodoListActive } from './Component/TodoListActive';
 import { TodoListCompleted } from './Component/TodoListCompleted';
 
-const URL = "https://todo-list-api-7588.herokuapp.com";
+const URL = "http://localhost:3001";
 
 
 
