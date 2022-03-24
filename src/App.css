@@ -176,3 +176,10 @@ body{
     color: #770086;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
