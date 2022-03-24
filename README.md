@@ -6,3 +6,7 @@
 ## Como Iniciar:
 Abrir consola bash en el directorio raiz del proyecto y ejecutar ```npm run dev```.
 la aplicacion se ejecutara en la dirección http://localhost:3000/
+
+
+## Live Version
+Para acceder a la version live, ingresar al siguiente link: todo-list-api-7588.herokuapp.com/todos
