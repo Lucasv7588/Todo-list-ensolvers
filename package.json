@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "nodemon server.js",
-    "dev": "concurrently \"nodemon server.js\" \"react-scripts start\" \"mkdir data \" \"mkdir data/db\" \"mongod --dbpath ./data/db\""
+    "dev": "concurrently \"mkdir -P data/db\" \"mongod --dbpath ./data/db\" \"nodemon server.js\" \"react-scripts start\" \"mkdir data\""
   },
   "eslintConfig": {
     "extends": [
