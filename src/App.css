@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    width: 35rem;
+    height: 100%;
+    backdrop-filter: blur(1.5px);
+    margin: auto;
+    text-align: center;
+    color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.insert-todo{
+    margin: 2% 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 2%;
+    box-shadow: #222 4px 4px 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.insert{
+    width: 80%;
+    margin: auto;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.insert::placeholder{
+    font-size: 1rem;
+}
+
+.insert-button-container{
+    width: 15%;
+}
+
+.insert-button{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: #fff;
+    color: #777;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.todo-list-container{
+    background-color: #fff;
+    color: #000;
+    margin: 2% 0;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: #222 4px 4px 5px;
+}
+
+.list{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 2% 2%;
+    border-bottom: 1px solid #ccc;
+}
+
+.checkbox-container{
+    width: 10%;
+}
+
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.checkbox-checked{
+    width: 24px;
+    height: 24px;
+    background-image: linear-gradient(
+            45deg,
+            hsl(240deg 100% 30%) 0%,
+            hsl(251deg 100% 29%) 10%,
+            hsl(262deg 100% 28%) 20%,
+            hsl(273deg 99% 27%) 30%,
+            hsl(284deg 98% 26%) 40%,
+            hsl(295deg 98% 25%) 50%,
+            hsl(308deg 99% 30%) 60%,
+            hsl(321deg 99% 34%) 70%,
+            hsl(334deg 99% 39%) 80%,
+            hsl(347deg 100% 44%) 90%,
+            hsl(0deg 100% 48%) 100%
+            );
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.task-title{
+    width: 80%;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.task-title--checked{
+    color: #777;
+    text-decoration: line-through;
+    width: 80%;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.button-container{
+    width: 10%;
+}
+
+.delete{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: #fff;
+    color: #777;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.page-selector{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.page-selector-item{
+    cursor: pointer;
+    padding: 2% 4%;
+    font-size: 1rem;
+}
+
+.page-selector-item--active{
+    cursor: pointer;
+    padding: 2% 4%;
+    font-size: 1rem;
+    color: #770086;
+    text-decoration: underline;
 }
