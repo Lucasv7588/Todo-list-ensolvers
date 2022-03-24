@@ -9,4 +9,4 @@ la aplicacion se ejecutara en la dirección http://localhost:3000/
 
 
 ## Live Version
-Para acceder a la version live, ingresar al siguiente link: https://todo-list-7588.herokuapp.com/todos
+Para acceder a la version live, ingresar al siguiente link: https://todo-list-7588.herokuapp.com/
